@@ -132,10 +132,14 @@
                                 <frame key="frameInset" minX="16" minY="73" width="343" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Jhx-7E-beF" customClass="CircleView" customModule="SocialTest" customModuleProvider="target">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Jhx-7E-beF" customClass="CircleView" customModule="SocialTest" customModuleProvider="target">
                                         <frame key="frameInset" minX="8" minY="8" width="49" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="E4g-dM-Cgl" appends="YES" id="Dpq-4r-e4o"/>
+                                        </connections>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qGk-Wr-jCt" customClass="FancyField" customModule="SocialTest" customModuleProvider="target">
                                         <frame key="frameInset" minX="65" minY="17" width="213" height="30"/>
@@ -152,7 +156,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="405" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n5w-zb-KD8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="405" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n5w-zb-KD8">
                                 <frame key="frameInset" minY="146" width="375" height="521"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,7 +166,7 @@
                                         <frame key="frameInset" minY="28" width="375" height="405"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mhz-MK-bbA" id="rkG-Pw-oaK">
-                                            <frame key="frameInset" width="375" height="404"/>
+                                            <frame key="frameInset" width="375" height="405"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0r-Mi-4UJ" customClass="FancyView" customModule="SocialTest" customModuleProvider="target">
@@ -211,6 +215,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,6 +234,7 @@
                         <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="Jhx-7E-beF" id="blM-Rn-cOb"/>
                         <outlet property="tableView" destination="n5w-zb-KD8" id="adx-wI-J6F"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="RV9-0t-nrz"/>
                     </connections>
@@ -237,6 +243,11 @@
                 <tapGestureRecognizer id="55q-wJ-cfV">
                     <connections>
                         <action selector="signOut:" destination="SJV-gT-9K2" id="GVx-oV-Tuh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="E4g-dM-Cgl">
+                    <connections>
+                        <action selector="addImageTapped:" destination="SJV-gT-9K2" id="nOr-bZ-04I"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

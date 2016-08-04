@@ -23,6 +23,7 @@
 		CE9E92401D53934400CF39B2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E923F1D53934400CF39B2 /* CircleView.swift */; };
 		CE9E92421D539C0800CF39B2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E92411D539C0800CF39B2 /* PostCell.swift */; };
 		CE9E92451D53A82100CF39B2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E92441D53A82100CF39B2 /* DataService.swift */; };
+		CE9E92471D53B8BF00CF39B2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E92461D53B8BF00CF39B2 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CE9E923F1D53934400CF39B2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		CE9E92411D539C0800CF39B2 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CE9E92441D53A82100CF39B2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		CE9E92461D53B8BF00CF39B2 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		F0D230E12F283134D2CF473E /* Pods_SocialTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		CE9E922E1D53654E00CF39B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE9E92461D53B8BF00CF39B2 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				CE9E92401D53934400CF39B2 /* CircleView.swift in Sources */,
 				CE9E92391D53705200CF39B2 /* FancyField.swift in Sources */,
 				CE9E921D1D53639100CF39B2 /* SignInVC.swift in Sources */,
+				CE9E92471D53B8BF00CF39B2 /* Post.swift in Sources */,
 				CE9E92371D536EE300CF39B2 /* RoundBtn.swift in Sources */,
 				CE9E921B1D53639100CF39B2 /* AppDelegate.swift in Sources */,
 				CE9E92451D53A82100CF39B2 /* DataService.swift in Sources */,
